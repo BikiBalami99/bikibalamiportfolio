@@ -1,0 +1,47 @@
+.allSkills {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  margin: 1rem;
+  padding: 2rem 0;
+  border-radius: 1rem;
+  max-width: 1730px;
+  background: linear-gradient(237deg, #161616 10.74%, #000 89.26%);
+
+  overflow: hidden;
+}
+
+.allSkills h3 {
+  font-size: 3rem;
+  text-align: center;
+  background: linear-gradient(0deg, #c8c8c8 27.08%, #fff 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sectionRowsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1400px) {
+  /* Making each skill vertical in SkillSectionRow.module.css. Everything in this media query neeeds to be in sync in that file too */
+  .sectionRowsWrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  .allSkills {
+    width: 1730px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

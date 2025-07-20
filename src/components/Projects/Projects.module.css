@@ -1,0 +1,33 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: linear-gradient(237deg, #161616 10.74%, #000 89.26%);
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: 3rem 1rem;
+  max-width: 1730px;
+
+  /* If you ever change the gap or padding make sure to update it in the react component, or else the left and right button wont translate the desired distance */
+}
+
+.projects h3 {
+  font-size: 3rem;
+  text-align: center;
+  background: linear-gradient(0deg, #c8c8c8 27.08%, #fff 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projects > p {
+  text-align: center;
+}
+
+@media screen and (min-width: 1750px) {
+  .projects {
+    width: 1730px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
